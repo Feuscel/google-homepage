@@ -1,26 +1,44 @@
+:root{
+    --font: Arial;
+}
+
 header{
     position: relative;
-    border: 1px solid red;
-    height: 60px;
+    height: 41px;
     width: 100%;
-    
 }
 
 header div {
-    display: grid;
     position: absolute;
-    grid-template-columns: repeat(4, 2em);
-    grid-column-gap: 1em;
     right: 0;
-    top: 0%;
     height: 100%;
-    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-areas: "links apps";
+}
 
+header div  div{
+    top: 0%;
+    height: 100%;    
+}
+
+.groupLink{
+    grid-area: links;
+    transform: translateX(-55px);
+}
+
+.groupApp{
+    grid-area: apps;
+    justify-items: center;
 }
 
 .links{
     align-self: center;
-
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 13px;
 }
 
 .apps{
@@ -29,7 +47,6 @@ header div {
     border-radius: 50%;
     margin-top: 0;
     align-self: center;
-
 }
 
 #profile img{
@@ -39,3 +56,12 @@ header div {
 }
 
 
+#app{
+    color: #5f6368;
+    fill: currentColor;
+    border-radius: 50%;
+}
+
+#app:hover{
+    background-color: #F0F0F0;
+}
