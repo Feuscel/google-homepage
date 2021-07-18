@@ -27,6 +27,7 @@ header div  div{
     transform: translateX(-55px);
 }
 
+
 .groupApp{
     grid-area: apps;
     justify-items: center;
@@ -41,11 +42,14 @@ header div  div{
     font-size: 13px;
 }
 
+.links:hover {
+    text-decoration: underline;
+}
+
 .apps{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    margin-top: 0;
     align-self: center;
 }
 
@@ -53,6 +57,21 @@ header div  div{
     height: 32px;
     width: 32px;
     border-radius: 50%;
+    
+}
+
+#picture:hover{
+    transform: scale(0.5);
+}
+
+#profile {
+    border-radius: 50%;
+}
+
+
+#profile:hover{
+    background-color: #F0F0F0;
+    transform: scale(1.5);
 }
 
 
@@ -60,8 +79,14 @@ header div  div{
     color: #5f6368;
     fill: currentColor;
     border-radius: 50%;
+    /* transform: scale(1.1); */
+    padding: 4px;
 }
 
 #app:hover{
     background-color: #F0F0F0;
+}
+
+svg {
+    transform: scale(0.80);
 }
