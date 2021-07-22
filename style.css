@@ -60,19 +60,19 @@ header div  div{
     
 }
 
-#picture:hover{
+/* #picture:hover{
     transform: scale(0.5);
-}
+} */
 
 #profile {
     border-radius: 50%;
 }
 
 
-#profile:hover{
+/* #profile:hover{
     background-color: #F0F0F0;
     transform: scale(1.5);
-}
+} */
 
 
 #app{
@@ -89,4 +89,64 @@ header div  div{
 
 svg {
     transform: scale(0.80);
+}
+
+.main{
+    position: relative;
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 100%;
+}
+
+.main > * {
+    position: absolute;
+}
+
+.googlelogo{
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form{
+    display: grid;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    /* border: 1px solid blue; */
+}
+
+#searchbar{
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+
+}
+
+.button{
+    transform: translateX(30%);
+}
+
+.searchbutton{
+    padding: 0 16px;
+    margin: 11px 4px;
+    color: #3c4043;
+    font-size: 14px;
+    height: 36px;
+    background-color: #F8F9FA;
+    border-radius: 5px;
+    border-color: #F8F9FA;
+    border: 1px solid #f8f9fa;
+}
+
+.searchbutton:hover{
+    box-shadow: 0 0.5px 0.5px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
 }
