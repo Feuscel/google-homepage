@@ -2,10 +2,13 @@
     --font: Arial;
 }
 
+
+
 header{
     position: relative;
     height: 41px;
     width: 100%;
+    
 }
 
 header div {
@@ -60,19 +63,24 @@ header div  div{
     
 }
 
-/* #picture:hover{
-    transform: scale(0.5);
-} */
-
 #profile {
     border-radius: 50%;
 }
 
-
-/* #profile:hover{
+#profile::before{
+    content: "";
+    position: absolute;
+    padding: 15px;
+    border-radius: 50%;
     background-color: #F0F0F0;
-    transform: scale(1.5);
-} */
+    z-index: -1;
+
+}
+
+
+#profile:hover::before{
+        transform: scale(1.2);
+}
 
 
 #app{
@@ -124,9 +132,33 @@ form{
     box-shadow: none;
     border-radius: 24px;
     height: 44px;
+    width: 70%;
     margin: 0 auto;
-
+    padding-left: 20px;
 }
+
+#mic{
+    position: absolute;
+    height: 23px;
+    width: 15px;
+    right: 16%;
+    top: 12%;
+}
+
+#searchicon{
+    position: absolute;
+    left: 15%;
+    top: 12%;
+}
+
+#searchbar:focus-visible{
+    outline: none;
+}
+
+/* .mic{
+    transform: scale(0.0000001);
+    z-index: -1;
+} */
 
 .button{
     transform: translateX(30%);
@@ -146,7 +178,65 @@ form{
 
 .searchbutton:hover{
     box-shadow: 0 0.5px 0.5px rgb(0 0 0 / 10%);
-    background-color: #f8f9fa;
     border: 1px solid #dadce0;
     color: #202124;
+}
+
+#searchbar:hover{
+    box-shadow: 0px 1px 6px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+}
+
+footer{
+    background-color: #F2F2F2;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    right: 0%;
+    font-family: var(--font);
+
+}
+
+.country{
+    border-bottom: 1px solid #DDDDDD;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.aboutus{
+    margin-left: 2%;
+}
+
+.aboutconsumer{
+    margin-right: 2%;
+}
+
+.aboutus > a, .aboutconsumer > a{
+    padding-right: 10px;
+}
+
+
+
+/* .about > div{
+    margin: 10px;
+} */
+
+.carbone{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.carbone > img{
+    height: 14px;
 }
